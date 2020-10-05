@@ -47,7 +47,7 @@ price_menu(x)
 ##  `print_vegetarian_menu()`:
 
 
-dish_menu={
+v_menu={
 'Salmon Sushi': 'N',
 'Pork Dumplings': 'N',
 'Choziro Tacos': 'N',
@@ -60,7 +60,7 @@ dish_menu={
  'Luau': 'Y',
  'Kabab' : 'N'
 }
- for n in dish_menu:
+ for n in v_menu:
   def vegetarian_menu(n):
-    if dish_menu[n] == Y:
+    if (v_menu[n] == 'Y'):
     print(n)
