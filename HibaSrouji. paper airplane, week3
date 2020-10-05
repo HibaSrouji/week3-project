@@ -42,3 +42,25 @@ def price_menu(x):
  print(x + ' : ' + dish_menu[x] + ', price: ' + dish_price[x])
 
 price_menu(x)
+
+
+##  `print_vegetarian_menu()`:
+
+
+dish_menu={
+'Salmon Sushi': 'N',
+'Pork Dumplings': 'N',
+'Choziro Tacos': 'N',
+'Chickpea Curry': 'Y',
+ 'Apple Pie': 'Y',
+ 'Jollof Rice': 'N',
+ 'Dolma': 'N',
+ 'Vegetable Pho': 'Y',
+ 'Kvass': 'Y',
+ 'Luau': 'Y',
+ 'Kabab' : 'N'
+}
+ for n in dish_menu:
+  def vegetarian_menu(n):
+    if dish_menu[n] == Y:
+    print(n)
