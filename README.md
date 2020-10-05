@@ -1,2 +1,3 @@
-# week3-project
-a restaurant simulation
+# Paper Airplane course
+python
+
