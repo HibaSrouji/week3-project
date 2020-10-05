@@ -37,3 +37,21 @@ dish_price={
 }
 
 
+dish_menu={
+'Salmon Sushi': 'Japan',
+'Pork Dumplings': 'China',
+'Choziro Tacos': 'Mexico',
+'Chickpea Curry': 'India',
+ 'Apple Pie': 'USA',
+ 'Jollof Rice': 'Nigeria',
+ 'Dolma': 'Azerbaijan',
+ 'Vegetable Pho': 'Vietnam',
+ 'Kvass': 'Russia',
+ 'Luau': 'Samao',
+ 'Kabab' : 'Syria'
+}
+
+x = str(input('please enter your meal '))
+
+def price_menu():
+ print(x + ' : ' + dish_menu[x] + ', price : ' + dish_price[x]
