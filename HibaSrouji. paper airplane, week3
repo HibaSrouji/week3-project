@@ -7,35 +7,20 @@ python.
 '''
 ## 1. a dish-price dictionary,
 dish_price={
-'Salmon Sushi': 30,
-'Pork Dumplings': 25,
-'Choziro Tacos': 20,
-'Chickpea Curry': 36,
- 'Apple Pie': 16,
- 'Jollof Rice': 18,
- 'Dolma': 45,
- 'Vegetable Pho': 25,
- 'Kvass': 12,
- 'Luau': 30,
- 'Kabab': 30
+'Salmon Sushi': '30',
+'Pork Dumplings': '25',
+'Choziro Tacos': '20',
+'Chickpea Curry': '36',
+ 'Apple Pie': '16',
+ 'Jollof Rice': '18',
+ 'Dolma': '45',
+ 'Vegetable Pho': '25',
+ 'Kvass': '12',
+ 'Luau': '30',
+ 'Kabab': '30'
 }
 
-
-## 2. print_menu()
-   dish_menu={
-'Salmon Sushi': [30, 'Japan'],
-'Pork Dumplings': [25, 'China'],
-'Choziro Tacos': [20, 'Mexico'],
-'Chickpea Curry': [36, 'India'],
- 'Apple Pie': [16, 'USA'],
- 'Jollof Rice': [18, 'Nigeria'],
- 'Dolma': [45, 'Azerbaijan'],
- 'Vegetable Pho': [25, 'Vietnam'],
- 'Kvass': [12, 'Russia'],
- 'Luau': [30,['Samao'],
- 'Kabab': [30, 'Syria']
-}
-
+## 2. price_menu function
 
 dish_menu={
 'Salmon Sushi': 'Japan',
@@ -53,5 +38,7 @@ dish_menu={
 
 x = str(input('please enter your meal '))
 
-def price_menu():
- print(x + ' : ' + dish_menu[x] + ', price : ' + dish_price[x]
+def price_menu(x):
+ print(x + ' : ' + dish_menu[x] + ', price: ' + dish_price[x])
+
+price_menu(x)
