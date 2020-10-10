@@ -79,11 +79,11 @@ vegeterian_menu()
 
 
 ## 4.print_dishes_ordered_by_price()
-
+## 4.print_dishes_ordered_by_price()
 
 def sort(price): 
     for x in price:
-    n = len(price[x])
+     n = len(price)
 
     for i in range(n):
      swapped = False
@@ -92,7 +92,9 @@ def sort(price):
                price[j], price[j+1] = price[j+1], price[j]
                swapped == True
            
-     
+         
+
+price=[ 30, 25, 20, 36, 16, 18, 45, 25, 12, 30, 35]
 
 dish_prices={
 'Salmon Sushi': 30,
@@ -107,10 +109,16 @@ dish_prices={
 'Luau': 30,
 'Kabab': 35
 }
- for i in dish_prices:
-  sort(dish_prices[i])
-  print(dish_prices)
+sort(price)
 
+list4 =[]
+for i in price:
+ for j in dish_prices:
+  e = dish_prices[j]
+  if i == e:
+   list4.append(j)
+
+print(list4)
 
 ## 5. add_dish()
 
@@ -196,8 +204,8 @@ def sum_up():
   for a in list2:
    b = int(dish_prices[a])
    list3.append(b)
-   sum1 = sum(list3)
-   print(sum1)
+  sum1 = sum(list3)
+  print(sum1)
 
 
 sum_up()
