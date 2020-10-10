@@ -18,13 +18,13 @@ dish_price={
 'Pork Dumplings': '25',
 'Choziro Tacos': '20',
 'Chickpea Curry': '36',
- 'Apple Pie': '16',
- 'Jollof Rice': '18',
- 'Dolma': '45',
- 'Vegetable Pho': '25',
- 'Kvass': '12',
- 'Luau': '30',
- 'Kabab': '35'
+'Apple Pie': '16',
+'Jollof Rice': '18',
+'Dolma': '45',
+'Vegetable Pho': '25',
+'Kvass': '12',
+'Luau': '30',
+'Kabab': '35'
 }
 
 ## 2. price_menu function
@@ -34,13 +34,13 @@ dish_menu={
 'Pork Dumplings': 'China',
 'Choziro Tacos': 'Mexico',
 'Chickpea Curry': 'India',
- 'Apple Pie': 'USA',
- 'Jollof Rice': 'Nigeria',
- 'Dolma': 'Azerbaijan',
- 'Vegetable Pho': 'Vietnam',
- 'Kvass': 'Russia',
- 'Luau': 'Samao',
- 'Kabab' : 'Syria'
+'Apple Pie': 'USA',
+'Jollof Rice': 'Nigeria',
+'Dolma': 'Azerbaijan',
+'Vegetable Pho': 'Vietnam',
+'Kvass': 'Russia',
+'Luau': 'Samao',
+'Kabab' : 'Syria'
 }
 
 x = str(input('please enter your meal '))
@@ -59,26 +59,25 @@ v_menu={
 'Pork Dumplings': 'N',
 'Choziro Tacos': 'N',
 'Chickpea Curry': 'Y',
- 'Apple Pie': 'Y',
- 'Jollof Rice': 'N',
- 'Dolma': 'N',
- 'Vegetable Pho': 'Y',
- 'Kvass': 'Y',
- 'Luau': 'Y',
- 'Kabab' : 'N'
+'Apple Pie': 'Y',
+'Jollof Rice': 'N',
+'Dolma': 'N',
+'Vegetable Pho': 'Y',
+'Kvass': 'Y',
+'Luau': 'Y',
+'Kabab' : 'N'
 }
 
 
 def vegeterian_menu():
   for n in v_menu:
    if (v_menu[n] == 'Y'):
-     print(n)
+     print('the vegitarian menu is : ' + n)
 pass
 
 vegeterian_menu()
 
 
-## 4.print_dishes_ordered_by_price()
 ## 4.print_dishes_ordered_by_price()
 
 def sort(price): 
@@ -117,7 +116,7 @@ for i in price:
   e = dish_prices[j]
   if i == e:
    list4.append(j)
-
+print('the menu orderd by the price from cheapest to the most expinseve is : ')
 print(list4)
 
 ## 5. add_dish()
@@ -135,6 +134,7 @@ list1.append(v)
 
 tupel = tuple(list1)
 dishes.append(tupel)
+print('the dishes list after adding your new dish')
 print(dishes)
 
 
@@ -162,14 +162,14 @@ def apply_discount(discount):
  return lambda total_price : total_price * (1 - discount)
 
 a = apply_discount(discount)
-print(a(total_price))
+print('your total price after the discount is : ' + str(a(total_price)))
 
 
 
 ## 7. Get older():
  
  
- dishes={
+dishes={
 1 :'Salmon Sushi',
 2 :'Pork Dumplings',
 3 : 'Choziro Tacos',
@@ -205,10 +205,11 @@ def sum_up():
    b = int(dish_prices[a])
    list3.append(b)
   sum1 = sum(list3)
-  print(sum1)
+  print('your total price is : ' + str(sum1))
 
 
 sum_up()
+
 
 
 
