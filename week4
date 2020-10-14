@@ -1,0 +1,16 @@
+'''
+created by : Hiba Srouji
+paper airplane week4 
+'''
+## first question
+
+f = open('english.txt', 'r')
+
+txt = f.read().split('\n')
+print(txt)
+list = []
+for x in txt:
+  x = x.strip()
+  list.append(x)
+
+print(list)
