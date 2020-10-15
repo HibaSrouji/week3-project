@@ -35,19 +35,19 @@ for x in final1:
     list4.append(s)
 print(list4)
 
+def word_count(list4):
+    counts = dict()
 
-for f in list4:
-  k = len(list4)
-  for r in range(k):
-    for q in range(r+1):
-       if (list4[r] == list4[q]):
-         h += 1
-    print(list4[r] + str(h))
-       else:
-         h = 1
-    print(list4[r] + str(h))
+    for word in list4:
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+
+    return counts
 
 
+print(word_count(list4))
 
 
 
