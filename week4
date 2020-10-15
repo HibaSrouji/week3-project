@@ -4,31 +4,26 @@ paper airplane week4
 '''
 ## first question
 
+
+import re
 f = open('english.txt', 'r')
+text = f.read()
+text= text.strip()
+txt = re.split(',| ()', text)
 
-txt = f.read().split(', ')
-list =[]
-
-dictionary = {}
-for x in txt:
-  x = x.strip()
-  list.append(x)
-
-list1 = list.split('()')
+list1 =[]
 list2 = []
-list3 = []
-for y in list1:
- if (y%2 ==1):
-  list3.append(list1[y])
- else:
-  list2.append(list1[y])
-  
-final = zip(list2,list3)
-
+dictionary = {}
+n = len(txt)
+for i in range (n):
+  if (i%2 == 1):
+   list2.append(txt[i])
+  else:
+    list1.append(txt[i])
+final = zip(list1,list2)
 final1 = dict(final)
 
 print(final1)
-
 
 
 
