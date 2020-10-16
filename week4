@@ -76,6 +76,30 @@ numfinal = zip(numbers, number)
 numfinal1 = dict(numfinal)
 print(numfinal1)
 
+h = 0
+list5 =[]
+for o in final1:
+  b = len(x)  
+  if (b  > 3):
+    s = o[-3] + o[-2] + o[-1]
+    list5.append(s)
+
+
+print(word_count(list5))
+
+
+h = 0
+list6 =[]
+for q in final1:
+  b = len(x)  
+  if (b  > 3):
+    s =q[-2] + q[-1]
+    list6.append(s)
+
+
+print(word_count(list6))
+
+
 
 
 
