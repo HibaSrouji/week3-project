@@ -4,14 +4,14 @@ paper airplane week4
 '''
 ## first question
 f = open('english.txt', 'w')
-f.write('nation ( We must learn from our history to become a better nation ) , operation ( I went to hospital for an operation. ) , situation ( We need to assess this situation before we continue. ) , imagination ( imagination	She had a vivid imagination. ) , organisation ( A charity is a non-profit organisation. ) , ambition ( His life ambition was to become a painter. ) , position ( He has an advisory position in a large company. ) , pollution ( Air pollution is bad in many cities. ) , revolution ( She hoped to spark a revolution. ) , solution ( We made a simple solution of sugar and water. ) , attraction ( There was an obvious attraction between the couple. ) , affection ( He showed a great deal of affection to her. ) , explosion ( The bomb caused an explosion. ) , evasion ( We were all impressed by his evasion of all questions. ) , invasion ( We read about the invasion in the newspaper. ) , occasion ( We will commemorate the occasion with a party. ) , persuasion ( She needed all her powers of persuasion to get him to agree with her. ) , adhesion ( The glue offered good adhesion. ) , erosion( The erosion of land caused concern for those living near the coast. ) , corrosion ( The acid caused corrosion. ) , electrician ( The electrician fixed my lighting problem. ) , magician ( They had a magician at the childrens party. ) , mathematician ( The mathematician solved his calculation. ) , physician ( Our family have used the same physician for years. ) , clinician(The clinician tried to diagnose the patient. ) , does ( Why does this word look strange? ) , picture ( His picture was on the front page. ) , such ( Are you capable of cooking such a large meal? )')
+f.write('nation; We must learn from our history to become a better nation , operation; I went to hospital for an operation. , situation; We need to assess this situation before we continue. ,explosion; The bomb caused an explosion. , evasion; We were all impressed by his evasion of all questions. , invasion; We read about the invasion in the newspaper. , occasion; We will commemorate the occasion with a party. , magician; They had a magician at the childrens party. , mathematician; The mathematician solved his calculation. , such; Are you capable of cooking such a large meal?')
 f.close()
+
 
 import re
 f = open('english.txt', 'r')
 text = f.read()
-text= text.strip()
-txt = re.split(',| ()', text)
+txt = re.split(' ,|; ', text)
 
 list1 =[]
 list2 = []
@@ -35,10 +35,10 @@ for x in final1:
   if (b  > 3):
     s = x[-4] + x[-3] + x[-2] + x [-1]
     list4.append(s)
-print(list4)
 
+counts = dict()
 def word_count(list4):
-    counts = dict()
+
 
     for word in list4:
         if word in counts:
@@ -50,7 +50,31 @@ def word_count(list4):
 
 
 print(word_count(list4))
+number = []
+for num in counts:
+ number.append(counts[num])
 
+def sort(number): 
+    for x in number:
+     n = len(number)
+
+    for i in range(n):
+     swapped = False
+     for j in range(0, n-i-1):
+            if number[j] < number[j+1] : 
+               number[j], number[j+1] = number[j+1], number[j]
+               swapped == True
+numbers = []
+sort(number)
+for l in number:
+  for e in counts:
+    h = counts[e]
+    if l == h:
+     numbers.append(e)
+
+numfinal = zip(numbers, number)
+numfinal1 = dict(numfinal)
+print(numfinal1)
 
 
 
