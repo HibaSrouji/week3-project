@@ -3,10 +3,6 @@ created by : Hiba Srouji
 paper airplane week4 
 '''
 ## first question
-f = open('english.txt', 'w')
-f.write('nation; We must learn from our history to become a better nation , operation; I went to hospital for an operation. , situation; We need to assess this situation before we continue. ,explosion; The bomb caused an explosion. , evasion; We were all impressed by his evasion of all questions. , invasion; We read about the invasion in the newspaper. , occasion; We will commemorate the occasion with a party. , magician; They had a magician at the childrens party. , mathematician; The mathematician solved his calculation. , such; Are you capable of cooking such a large meal?')
-f.close()
-
 
 import re
 f = open('english.txt', 'r')
