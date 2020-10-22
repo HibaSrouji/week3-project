@@ -1,0 +1,25 @@
+'''
+week5 Paper Airplane homework
+created by Hiba Srouji.
+2020-10-22
+'''
+
+
+
+## 2. calculation function:
+
+def calclate(n):
+ if (n == 0):
+  return 0 
+ elif (n == 0):
+  return 0
+ elif n == 2 :
+  return 2
+ if (n % 2 == 0):
+  return n + calclate(n-2)
+ else:
+  return n - 1 + calclate(n - 3)
+
+
+
+
