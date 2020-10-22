@@ -3,7 +3,19 @@ week5 Paper Airplane homework
 created by Hiba Srouji.
 2020-10-22
 '''
+## 1. palindrome function:
 
+
+def pal(str):
+ list = []
+ for i in str:
+   list.append(i)
+ n = len(list)
+  if (list[i] == list[n-i+1]):
+   print('yes')
+  else:
+   print('no')
+ 
 
 
 ## 2. calculation function:
