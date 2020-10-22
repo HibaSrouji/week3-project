@@ -18,6 +18,21 @@ def pal(str):
  
 
 
+def pal(str):
+ list = []
+ x = 0
+ for i in str:
+   list.append(i)
+ n = len(list)
+
+ while x <= n - x
+   print(list[x])
+  x = x + 1
+
+pal('lebibel')
+
+
+
 ## 2. calculation function:
 
 def calclate(n):
