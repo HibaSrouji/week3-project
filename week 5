@@ -6,13 +6,13 @@ created by Hiba Srouji.
 ## 1. palindrome function:
  
  
- def palindrome1(str, s, e)
+ def palindrome1(str, s, e):
   if (str[s] == str[e]):
     return True
   if (str[s] != str[e]):
-    retrun False
+    return False
   if (s <= e +1):
-    return palindromel(str, s + 1, e -1)
+    return palindrome1(str, s + 1, e -1)
     
     
 def plandirum(str):
