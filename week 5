@@ -42,44 +42,59 @@ def calclate(n):
 ## quicksort function:
 
 
-Words = ['string','recursion','list', 'recursion','tuple','dictionary','if','else','for','while','try','except','elif']
-list = []
-def sort(array):
-    for i in array:
-      n = len(i)
-      list.append(n)
-    print(list)
-    
-    
-e = sort(words)
  
- def quicksort(list):
-    less = []
-    equal = []
-    greater =[]
-    
-    if len(list) > 1:
-        pivot = list[0]
-        for x in list:
-            if x < pivot:
-                less.append(x)
-            elif x == pivot:
-                equal.append(x)
-            elif x > pivot:
-                greater.append(x)
-        
-        return sort(less)+equal+sort(greater)  
-    else:
-        return array
-        
-final = quicksore(e)
-list3 = []
-for i in e:
- for j in final:
-  if (i == j):
-   list3.append(e)
-print(list3)
+def partition(arr, low, high):
+    i = (low-1)         # index of smaller element
+    pivot = arr[high]     # pivot
+ 
+    for j in range(low, high):
+ 
+        if arr[j] <= pivot:
+ 
+            i = i+1
+            arr[i], arr[j] = arr[j], arr[i]
+ 
+    arr[i+1], arr[high] = arr[high], arr[i+1]
+    return (i+1)
 
+ 
+ 
+def quickSort(arr, low, high):
+    if len(arr) == 1:
+        return arr
+    if low < high:
+
+        pi = partition(arr, low, high)
+ 
+        quickSort(arr, low, pi-1)
+        quickSort(arr, pi+1, high)
+ 
+ 
+
+words = ['string','recursion','list', 'recursion','tuple','dictionary','if','else','for','while','try','except','elif']
+arr = []
+for i in words:
+  n1 = len(i)
+  arr.append(n1)
+
+print(arr)
+n = len(arr)
+
+quickSort(arr, 0, n-1)
+
+
+final =[]
+for i in range(n):
+  final.append(arr[i])
+print(final)
+finale = []
+for j in final:
+  for x in words:
+    if(j == len(x)):
+     finale.append(x)
+
+
+print(finale)
 
 
 
