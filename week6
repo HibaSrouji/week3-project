@@ -1,0 +1,33 @@
+'''
+paper airplane workshop
+a school simulation
+created by : Hiba Srouji.
+'''
+
+
+class Student:
+
+    def __init__(self, name, course):
+        self.name = name
+        self.course = course
+
+    def calculate(self):
+      x = input('inter your number of classes')
+      while x > 0:
+        marke = input('inter your markes in each class')
+          x = x - 1
+
+
+      y = 0
+      for i in marke:
+        y = y + i
+        print('your final markes is ' + str(y))
+
+
+
+hiba = Student('srouji', 9)
+hiba.calculate()
+
+
+
+
