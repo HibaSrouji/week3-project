@@ -11,22 +11,38 @@ class Student:
         self.name = name
         self.course = course
 
-    def calculate(self):
-      x = input('inter your number of classes')
+    def yourclasses(self):
+      yourclasses= []
+      x = input('inter your number of classes you wanna have  ')
       while x > 0:
-        marke = input('inter your markes in each class')
-          x = x - 1
-
-
-      y = 0
-      for i in marke:
-        y = y + i
-        print('your final markes is ' + str(y))
+        classes = input('inter your class name')
+         yourclasses.append(classes)
+        print(yourclasss)
+         x = x -1
+        
+    def calculate(self):
+     y = 0
+     marke = []
+      for i in yourclasses:
+        long = len(i)
+        while long > 0
+        markes = input('inter your markes for each class')
+        marke.append(markes)
+         long = long - 1
+         
+         for h in marke:
+          y = y + n
+          
+          print(y)
+         
+         
+         
 
 
 
 hiba = Student('srouji', 9)
 hiba.calculate()
+hiba.yourclasses()
 
 
 
