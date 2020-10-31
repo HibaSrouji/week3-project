@@ -10,6 +10,16 @@ class Student:
     def __init__(self, name, course):
         self.name = name
         self.course = course
+        
+        
+    def yourschool(self);
+        school = 'Albasel High School'
+        print('your school is ' + school)
+        
+        
+        
+    def nameandcourse(self):
+        print('your name is ' + self.name + ' and your course is ' + self.course)
 
     def yourclasses(self):
       yourclasses= []
@@ -31,11 +41,6 @@ class Student:
        print(m)
        
 
-         
-
-
-
-hiba = Student('srouji', 'programming')
 
 
 
