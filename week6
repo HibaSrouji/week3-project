@@ -3,45 +3,58 @@ paper airplane workshop
 a school simulation
 created by : Hiba Srouji.
 '''
+class Students:
+  
+  def __init__(self, name, studying):
+    self.name = name
+    self.studying = studying
 
 
-class Student:
 
-    def __init__(self, name, course):
-        self.name = name
-        self.course = course
-        
-        
-    def yourschool(self);
-        school = 'Albasel High School'
-        print('your school is ' + school)
-        
-        
-        
-    def nameandcourse(self):
-        print('your name is ' + self.name + ' and your course is ' + self.course)
-
-    def yourclasses(self):
-      yourclasses= []
-      x = input('inter your number of classes you wanna have  ')
-      while x > 0:
-         classes = input('inter your class name')
-           yourclasses.append(classes)
-         x = x -1
-      print(yourclasses)   
-         
-         
-       def calculat(self):
-       n = len(courselist)
-       m = 0
-       while n > 0:
-         z = inpur('plears inter your marks ')
-           m = m + z
-        n = n - 1
-       print(m)
-       
+  def nameandstudy(self):
+    print('you are ' + self.name + ' you are studying ' + self.studying + '. ')
+    
+    
+  def school(self):
+    yourschool = 'AlBasel High School'
+    print('your school is '+ yourschool + '. ')
+    
+    
+  
+  def materials(self):
+    materials = []
+    x = input("please inter your materials' number ")
+    x = int(x)
+    while x > 0:
+     y = input("please inter your materials' name ")
+     materials.append(y)
+     x = x - 1
+    print(materials)
 
 
+  def marks(self):
+    x = input("please inter your materials' number ")
+    x  = int(x)
+    markes = 0
+    while x > 0:
+     z = input('please inter your markes in each material ')
+     markes = markes + z
+     x = x - 1
+    print(markes)
+     
+    
+    
+    
+
+
+
+
+hiba = Students("Srouji", "Medicine")
+
+hiba.nameandstudy()
+hiba.school()
+hiba.materials()
+hiba.marks()
 
 
 
