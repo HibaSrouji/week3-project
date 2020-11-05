@@ -22,6 +22,18 @@ class Travels:
     self.nameto = nameto
     self.date = date
     self.time= time
+  
+  
+  def theflight(self):
+    print('the planned flight is travelling to ' + self.nameto + ' \non ' + self.date + ' \nat ' + self.time)
+
+
+  def destiny(self):
+    x = input('plaese inter your destination: ')
+    if (x == self.nameto):
+      print('there is a schedualed flight for that')
+    else:
+      print('we are sorry we will schedual it soon')
 
 
 canberra = Travels('Canberra', '2020-12-9', '09:30')
