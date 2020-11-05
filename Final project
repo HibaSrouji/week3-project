@@ -1,0 +1,43 @@
+'''
+Final Project, Paper Airplane Workshop.
+An Airplane simulation.
+python
+created by :Hiba Srouji
+2020-11-05
+'''
+
+airport = 'Hiba International Airplane'
+def welcoming():
+    print('Welcome to "' + airport + '" for rare flight.')
+
+def mission():
+    print('Our Mission is: Organizing flights that other airports do not -or rarly- organize.')
+
+welcoming()
+mission()
+
+class Travels:
+
+  def __init__(self, nameto, date, time):
+    self.nameto = nameto
+    self.date = date
+    self.time= time
+
+
+canberra = Travels('Canberra', '2020-12-9', '09:30')
+singapore = Travels('Singapore', '2020-12-9', '10:30')
+seoul = Travels('Seoul', '2020-12-9', '11:30')
+tokyo = Travels('Tokyo', '2020-12-9', '12:30')
+zagreb = Travels('Zagrep', '2020-12-9', '13:30')
+vienna = Travels('Vienna', '2020-12-9', '14:30')
+roma = Travels('Roma', '2020-12-9', '15:30')
+berlin = Travels('Berlin', '2020-12-9', '16:30')
+ljubljana= Travels('Ljubljana', '2020-12-9', '17:30')
+damascuse = Travels('Damascuse' , '2020-12-9', '18:30')
+paris = Travels('Paris', '2020-12-9', '19:30')
+london = Travels('London', '2020-12-9', '20:30')
+florenca = Travels('Floransa', '2020-12-9', '21:30')
+nopoli = Travels('London', '2020-12-9', '22:30')
+brussels = Travels('Brussels', '2020-12-9', '23:30')
+print(aleppo.nameto)
+  
