@@ -32,15 +32,22 @@ class Students:
     print(materials)
 
 
-  def marks(self):
+
+ def marks(self):
     x = input("please inter your materials' number ")
-    x  = int(x)
+    i  = int(x)
     markes = 0
-    while x > 0:
+    while i > 0:
      z = input('please inter your markes in each material ')
+     z = int(z)
      markes = markes + z
-     x = x - 1
-    print(markes)
+     i = i - 1
+
+
+    markes = int(markes)
+    final = markes / int(x)
+    print(final)
+     
      
     
     
