@@ -6,6 +6,9 @@ created by :Hiba Srouji
 2020-11-05
 '''
 
+travels= (['Canberra', '2020-12-9', '09:30', 'A'],['Singapore', '2020-12-9', '10:30', 'A'],['Seoul', '2020-12-9', '11:30', 'A'],['Tokyo', '2020-12-9', '12:30', 'A'],['Zagrep', '2020-12-9', '13:30', 'U'],['Vienna', '2020-12-9', '14:30', 'E'],['Roma', '2020-12-9', '15:30', 'E'],['Berlin', '2020-12-9', '16:30', 'E'],['Ljubljana', '2020-12-9', '17:30', 'E'],['Damascuse' , '2020-12-9', '18:30', 'A'],['Paris', '2020-12-9', '19:30', 'E'],['London', '2020-12-9', '20:30', 'E'],['Floransa', '2020-12-9', '21:30', 'E'],['London', '2020-12-9', '22:30', 'E'],['Brussels', '2020-12-9', '23:30', 'E'])
+
+
 airport = 'Hiba International Airplane'
 def welcoming():
     print('Welcome to "' + airport + '" for rare flight.')
@@ -15,6 +18,33 @@ def mission():
 
 welcoming()
 mission()
+
+def allflight():
+  print('the whole destination is to :')
+  for i in travels:
+    print(i[0])
+
+allflight()
+
+
+def continent():
+  asia = []
+  europe = []
+  australia = []
+  for i in travels:
+    if (i[3] == 'A'):
+      asia.append(i[0])
+    elif (i[3] == 'E'):
+      europe.append(i[0])
+    else:
+      australia.append(i[0])
+  print('The asian flights is :')
+  print(asia)
+  print('The europian flights is :')
+  print(europe)
+  print('The australian flights is :')
+  print(australia)
+
 
 class Travels:
 
