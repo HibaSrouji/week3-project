@@ -46,6 +46,26 @@ def continent():
   print(australia)
 
 
+def destiny():
+  dest = 0
+  y = []
+  n = len(travels)
+  x = input('please inter your destination : ')
+  for i in travels:
+    if (x == i[0]):
+      dest = dest - 1
+      y.append(i)
+    else:
+      dest = dest + 1
+  if (dest < n):
+    print('there is a schedualed flight like that. ')
+    print(y)
+  else:
+    print('sorry, we will schedueld it soon..')
+
+destiny()
+
+
 class Travels:
 
   def __init__(self, nameto, date, time):
