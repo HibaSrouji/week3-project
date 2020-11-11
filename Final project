@@ -45,6 +45,7 @@ def continent():
   print('The australian flights is :')
   print(australia)
 
+continent()
 
 def destiny():
   dest = 0
@@ -64,6 +65,35 @@ def destiny():
     print('sorry, we will schedueld it soon..')
 
 destiny()
+
+
+for s in range (0,200):
+  nearwindow = []
+  notnearwindow = []
+  if (s % 2 == 0):
+    nearwindow.append(s)
+  else:
+    notnearwindow.append(s)
+
+seat = input('do you want a near window seat? ')
+if (seat == 'yes'):
+  print('the avaliabel seat is ')
+  print(nearwindow)
+  if(nearwindow == []):
+    print('we are sorry, the seat for this flight run out')
+  else:  
+    yourownseat = input('please choose a seat num')
+    nearwindow.delet(yourownseat)
+
+else:
+  print('the avaliabel seat is ')
+  print(notnearwindow)
+  if(notnearwindow == []):
+    print('we are sorry, the seat for this flught run out')
+  else:  
+    yourownseat = input('please choose a seat num')
+    notnearwindow.delet(yourownseat)
+
 
 
 class Travels:
