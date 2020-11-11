@@ -46,7 +46,6 @@ def continent():
   print(australia)
 
 continent()
-
 def destiny():
   dest = 0
   y = []
@@ -62,7 +61,15 @@ def destiny():
     print('there is a schedualed flight like that. ')
     print(y)
   else:
-    print('sorry, we will schedueld it soon..')
+    thenewflight = []
+    thenewflight.append(dest)
+    print('sorry, we will schedueld it')
+    yourflightdate = input('please inter your perfect date ')
+    thenewflight.append(yourflightdate)
+    yourflighttime = input('please enter your perfect time')
+    thenewflight.append(yourflighttime)
+    travels.append(thenewflight)
+    print(travels)
 
 destiny()
 
