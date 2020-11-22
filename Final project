@@ -4,10 +4,7 @@ An Airplane simulation.
 python
 created by :Hiba Srouji
 2020-11-05
-'''
-travels= [('Canberra', '2020-12-9', '09:30', 'A'),('Singapore', '2020-12-9', '10:30', 'A'),('Seoul', '2020-12-9', '11:30', 'A'),('Tokyo', '2020-12-9', '12:30', 'A'),('Zagrep', '2020-12-9', '13:30', 'U'),('Vienna', '2020-12-9', '14:30', 'E'),('Roma', '2020-12-9', '15:30', 'E'),('Berlin', '2020-12-9', '16:30', 'E'),('Ljubljana', '2020-12-9', '17:30', 'E'),('Damascuse' , '2020-12-9', '18:30', 'A'),('Paris', '2020-12-9', '19:30', 'E'),('London', '2020-12-9', '20:30', 'E'),('Floransa', '2020-12-9', '21:30', 'E'),('London', '2020-12-9', '22:30', 'E'),('Brussels', '2020-12-9', '23:30', 'E')]
-
-
+'''travels= [('Canberra', '2020-12-9', '09:30', 'A', 500),('Singapore', '2020-12-9', '10:30', 'A', 450),('Seoul', '2020-12-9', '11:30', 'A', 550),('Tokyo', '2020-12-9', '12:30', 'A', 650),('Zagrep', '2020-12-9', '13:30', 'U', 500),('Vienna', '2020-12-9', '14:30', 'E', 450),('Roma', '2020-12-9', '15:30', 'E', 400),('Berlin', '2020-12-9', '16:30', 'E', 550),('Ljubljana', '2020-12-9', '17:30', 'E', 500),('Damascuse' , '2020-12-9', '18:30', 'A', 100),('Paris', '2020-12-9', '19:30', 'E', 550),('London', '2020-12-9', '20:30', 'E', 600),('Floransa', '2020-12-9', '21:30', 'E', 400),('London', '2020-12-9', '22:30', 'E', 400),('Brussels', '2020-12-9', '23:30', 'E', 550)]
 airport = 'Hiba International Airplane'
 def welcoming():
     print('Welcome to "' + airport + '" for rare flight.')
@@ -130,20 +127,20 @@ class Travels:
       print('we are sorry we will schedual it soon')
 
 
-canberra = Travels('Canberra', '2020-12-9', '09:30')
-singapore = Travels('Singapore', '2020-12-9', '10:30')
-seoul = Travels('Seoul', '2020-12-9', '11:30')
-tokyo = Travels('Tokyo', '2020-12-9', '12:30')
-zagreb = Travels('Zagrep', '2020-12-9', '13:30')
-vienna = Travels('Vienna', '2020-12-9', '14:30')
-roma = Travels('Roma', '2020-12-9', '15:30')
-berlin = Travels('Berlin', '2020-12-9', '16:30')
-ljubljana= Travels('Ljubljana', '2020-12-9', '17:30')
-damascuse = Travels('Damascuse' , '2020-12-9', '18:30')
-paris = Travels('Paris', '2020-12-9', '19:30')
-london = Travels('London', '2020-12-9', '20:30')
-florenca = Travels('Floransa', '2020-12-9', '21:30')
-nopoli = Travels('London', '2020-12-9', '22:30')
-brussels = Travels('Brussels', '2020-12-9', '23:30')
+canberra = Travels('Canberra', '2020-12-9', '09:30', 500)
+singapore = Travels('Singapore', '2020-12-9', '10:30', 450)
+seoul = Travels('Seoul', '2020-12-9', '11:30', 550)
+tokyo = Travels('Tokyo', '2020-12-9', '12:30', 650)
+zagreb = Travels('Zagrep', '2020-12-9', '13:30', 500)
+vienna = Travels('Vienna', '2020-12-9', '14:30', 450)
+roma = Travels('Roma', '2020-12-9', '15:30', 400)
+berlin = Travels('Berlin', '2020-12-9', '16:30', 550)
+ljubljana= Travels('Ljubljana', '2020-12-9', '17:30', 500)
+damascuse = Travels('Damascuse' , '2020-12-9', '18:30', 100)
+paris = Travels('Paris', '2020-12-9', '19:30', 550)
+london = Travels('London', '2020-12-9', '20:30', 600)
+florenca = Travels('Floransa', '2020-12-9', '21:30', 400)
+nopoli = Travels('London', '2020-12-9', '22:30', 400)
+brussels = Travels('Brussels', '2020-12-9', '23:30', 550)
 print(aleppo.nameto)
   
