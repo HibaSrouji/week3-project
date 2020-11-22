@@ -105,6 +105,23 @@ try:
 except:
  print('please answer the question correctly, Thanks.')
 
+classs = input('which class you wanna book? ')
+
+def calculate():
+  for i in travels:
+   i = list(i)
+   for j in i:
+     if (x == travels[i][1]):
+       if (classs == 'first'):
+        price = travels[i][4]*2
+        print(price)
+       elif (classs == 'economy'):
+        price = travels[i][4]/2
+        print(price)
+       else:
+         price= travels[i][4]
+         print(price)
+
 
 
 class Travels:
