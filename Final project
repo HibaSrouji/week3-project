@@ -15,6 +15,17 @@ def mission():
 welcoming()
 mission()
 
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+matplotlip inline
+airplane = pd.read_csv()
+airplane.describe()
+
+
+
+
 def allflight():
   print('the whole destination is to :')
   for i in travels:
