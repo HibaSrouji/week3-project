@@ -19,7 +19,6 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-matplotlip inline
 airplane = pd.read_csv()
 airplane.describe()
 
@@ -51,13 +50,13 @@ def continent():
   print(europe)
   print('The australian flights is :')
   print(australia)
-
+x = input('please inter your destination : ')
 continent()
 def destiny():
   dest = 0
   y = []
   n = len(travels)
-  x = input('please inter your destination : ')
+  
   for i in travels:
     if (x == i[0]):
       dest = dest - 1
@@ -147,13 +146,6 @@ class Travels:
     print('the planned flight is travelling to ' + self.nameto + ' \non ' + self.date + ' \nat ' + self.time)
 
 
-  def destiny(self):
-    x = input('plaese inter your destination: ')
-    if (x == self.nameto):
-      print('there is a schedualed flight for that')
-    else:
-      print('we are sorry we will schedual it soon')
-
 
 canberra = Travels('Canberra', '2020-12-9', '09:30', 500)
 singapore = Travels('Singapore', '2020-12-9', '10:30', 450)
@@ -170,5 +162,4 @@ london = Travels('London', '2020-12-9', '20:30', 600)
 florenca = Travels('Floransa', '2020-12-9', '21:30', 400)
 nopoli = Travels('London', '2020-12-9', '22:30', 400)
 brussels = Travels('Brussels', '2020-12-9', '23:30', 550)
-print(aleppo.nameto)
-  
+
