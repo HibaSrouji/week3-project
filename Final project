@@ -38,18 +38,6 @@ mission()
 
 print('As we all know that there is a risk of accident in every flight, so we will show you the mean and percentage that we also have at this airport')
 print('if you want to see statistical study about savety please check this link: http://localhost:8888/notebooks/Desktop/final%20project/safety.ipynb ')
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-
-safty = pd.read_csv('airline-safety.csv')
-safty
-safty[['airline','fatal_accidents_00_14', 'fatalities_00_14']].describe()
-plt.plot(safty.fatalities_00_14, safty.airline)
-plt.title('fatalities')
-plt.ylabel('airlines')
-plt.xlabel('fatalities')
-plt.show()
 
 
 
