@@ -154,7 +154,7 @@ def calculate():
       print('we will schedual it soon. Please revisit us before to know the price')
 
 
-
+calculate()
 
 class Travels:
 
