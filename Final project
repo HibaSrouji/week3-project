@@ -37,7 +37,7 @@ mission()
 
 
 print('As we all know that there is a risk of accident in every flight, so we will show you the mean and percentage that we also have at this airport')
-
+print('if you want to see statistical study about savety please check this link: http://localhost:8888/notebooks/Desktop/final%20project/safety.ipynb ')
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -148,27 +148,24 @@ except:
 
 
 classes = input('which class you wanna book? ')
-
 def calculate():
-   for i in price:
-     if (x == i):
-       if (classes == 'first'):
-         print('you have to pay :')
-         account = price[i] + 200
-         print(account)
-       elif (classes == 'economy'):
-         print('you have to pay :')
-         account = price[i] - 200
-         print(account)
-       else:
-         print('you have to pay :')
-         account = price[i]
-         print(account)
-     else:
-      print('We will add the price for this travel soon')
+    try:
+      if (classes == 'first'):
+       print('you have to pay :')
+       account = price[x] + 200
+       print(account)
+      elif (classes == 'economy'):
+       print('you have to pay :')
+       account = price[x] - 200
+       print(account)
+      else:
+       print('you have to pay :')
+       account = price[x]
+       print(account)
+    except:
+      print('we will schedual it soon. Please revisit us before to know the price')
 
 
-calculate()
 
 
 class Travels:
