@@ -4,7 +4,27 @@ An Airplane simulation.
 python
 created by :Hiba Srouji
 2020-11-05
-'''travels= [('Canberra', '2020-12-9', '09:30', 'A', 500),('Singapore', '2020-12-9', '10:30', 'A', 450),('Seoul', '2020-12-9', '11:30', 'A', 550),('Tokyo', '2020-12-9', '12:30', 'A', 650),('Zagrep', '2020-12-9', '13:30', 'U', 500),('Vienna', '2020-12-9', '14:30', 'E', 450),('Roma', '2020-12-9', '15:30', 'E', 400),('Berlin', '2020-12-9', '16:30', 'E', 550),('Ljubljana', '2020-12-9', '17:30', 'E', 500),('Damascuse' , '2020-12-9', '18:30', 'A', 100),('Paris', '2020-12-9', '19:30', 'E', 550),('London', '2020-12-9', '20:30', 'E', 600),('Floransa', '2020-12-9', '21:30', 'E', 400),('London', '2020-12-9', '22:30', 'E', 400),('Brussels', '2020-12-9', '23:30', 'E', 550)]
+'''
+
+travels= [('Canberra', '2020-12-9', '09:30', 'A'),('Singapore', '2020-12-9', '10:30', 'A'),('Seoul', '2020-12-9', '11:30', 'A'),('Tokyo', '2020-12-9', '12:30', 'A'),('Zagrep', '2020-12-9', '13:30', 'U'),('Vienna', '2020-12-9', '14:30', 'E'),('Roma', '2020-12-9', '15:30', 'E'),('Berlin', '2020-12-9', '16:30', 'E'),('Ljubljana', '2020-12-9', '17:30', 'E'),('Damascuse' , '2020-12-9', '18:30', 'A'),('Paris', '2020-12-9', '19:30', 'E'),('London', '2020-12-9', '20:30', 'E'),('Floransa', '2020-12-9', '21:30', 'E'),('Brussels', '2020-12-9', '23:30', 'E')]
+
+price = {
+  'Canberra': 500,
+  'Singapore': 450,
+  'Seoul' : 550,
+  'Tokyo' : 650, 
+  'Zagrep' : 500,
+  'Vienna' : 450,
+  'Rome' : 400, 
+  'Brline' : 550,
+  'Ljubljana' : 500,
+  'Damascuse' : 100,
+  'Paris' : 550, 
+  'London' :600,
+  'Floransa' : 400,
+   'Brussels' : 550
+  }
+
 airport = 'Hiba International Airplane'
 def welcoming():
     print('Welcome to "' + airport + '" for rare flight.')
@@ -50,8 +70,9 @@ def continent():
   print(europe)
   print('The australian flights is :')
   print(australia)
-x = input('please inter your destination : ')
 continent()
+
+x = input('please inter your destination : ')
 def destiny():
   dest = 0
   y = []
@@ -115,23 +136,30 @@ try:
 except:
  print('please answer the question correctly, Thanks.')
 
-classs = input('which class you wanna book? ')
+
+
+classes = input('which class you wanna book? ')
 
 def calculate():
-  for i in travels:
-   i = list(i)
-   for j in i:
-     if (x == travels[i][1]):
-       if (classs == 'first'):
-        price = travels[i][4]*2
-        print(price)
-       elif (classs == 'economy'):
-        price = travels[i][4]/2
-        print(price)
+   for i in price:
+     if (x == i):
+       if (classes == 'first'):
+         print('you have to pay :')
+         account = price[i] + 200
+         print(account)
+       elif (classes == 'economy'):
+         print('you have to pay :')
+         account = price[i] - 200
+         print(account)
        else:
-         price= travels[i][4]
-         print(price)
+         print('you have to pay :')
+         account = price[i]
+         print(account)
+     else:
+      print('We will add the price for this travel soon')
 
+
+calculate()
 
 
 class Travels:
